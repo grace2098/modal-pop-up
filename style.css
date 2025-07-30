@@ -1,0 +1,66 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ body{
+    font-family:fantasy ;
+ }
+ .container{
+    background: linear-gradient(to right,rgb(228, 97, 141),rgb(211, 43, 43));
+    height: 100vh;
+    display: flex;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .container a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: peachpuff;
+    padding: 50px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+ }
+ .modal{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: o;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+ }
+ .modal:target{
+    visibility: visible;
+    opacity: 1;
+
+ }
+ .modalcontent{
+    position: relative;
+    background-color: peachpuff;
+    width: 600px;
+    text-align: center;
+    padding: 1em, 2em;
+    border-radius:5px;
+ }
+ a{
+    font-size: 20px;
+
+ }
+ .modalclose{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: black;
+    text-decoration:none ;
+    font-size: 30px;
+
+ }
